@@ -3,11 +3,12 @@ js-interview
 A list of questions that I have asked throughout the process of learning js.
 
 # Constructors
+
 ## new
 
 What does `new` do?
 
-## Question:
+### Question:
 
 What does `new` do in the following example.
 
@@ -17,7 +18,7 @@ var Vehicle = function Vehicle() {
 }
 var vehicle = new Vehicle();
 ```
-## Answer : 
+### Answer : 
 
 When new Vehicle() is called, JavaScript does four things:
 
@@ -26,8 +27,11 @@ When new Vehicle() is called, JavaScript does four things:
 3. It sets up the object to delegate to Vehicle.prototype.
 4. It calls Vehicle() in the context of the new object.
 
-##Question:
+### Question:
+
 Will  `new Date` run without throwing a runtime exception?
-## Answer:
+
+### Answer:
+
 Yes
 
