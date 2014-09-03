@@ -7,7 +7,7 @@ A list of questions that I have asked throughout the process of learning js.
 
 What does `new` do?
 
-# Question:
+## Question:
 
 What does `new` do in the following example.
 
@@ -17,7 +17,7 @@ var Vehicle = function Vehicle() {
 }
 var vehicle = new Vehicle();
 ```
-# Answer : 
+## Answer : 
 
 When new Vehicle() is called, JavaScript does four things:
 
