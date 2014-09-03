@@ -20,7 +20,7 @@ var vehicle = new Vehicle();
 ```
 ### Answer : 
 
-When new Vehicle() is called, JavaScript does four things:
+When `new Vehicle()` is called, JavaScript does four things:
 
 1. It creates a new object.
 2. It sets the constructor property of the object to Vehicle.
