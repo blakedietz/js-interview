@@ -23,9 +23,9 @@ var vehicle = new Vehicle();
 When `new Vehicle()` is called, JavaScript does four things:
 
 1. It creates a new object.
-2. It sets the constructor property of the object to Vehicle.
-3. It sets up the object to delegate to Vehicle.prototype.
-4. It calls Vehicle() in the context of the new object.
+2. It sets the `constructor` property of the object to `Vehicle`.
+3. It sets up the object to delegate to `Vehicle.prototype`.
+4. It calls `Vehicle()` in the context of the new object.
 
 ---
 
