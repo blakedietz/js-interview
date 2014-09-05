@@ -35,3 +35,27 @@ Will  `new Date` run without throwing a runtime exception?
 
 Yes
 
+```javascript
+function Person(age, name)
+{
+
+	this.age  = age;
+	this.name = name;
+
+	privateBirthday();
+	this.birthday();
+}
+
+Person.prototype.birthday = birthday;
+
+function birthday()
+{
+	this.age++;
+}
+
+function privateBirthday()
+{
+	this.age++;
+}
+```
+
