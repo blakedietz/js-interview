@@ -35,6 +35,8 @@ Will  `new Date` run without throwing a runtime exception?
 
 Yes
 
+### Question:
+What is the value of `this` when initializing `daniel`.
 ```javascript
 function Person(age, name)
 {
@@ -57,5 +59,8 @@ function privateBirthday()
 {
 	this.age++;
 }
+
+var daniel = new Person(24, 'Daniel');
 ```
 
+### Answer:
