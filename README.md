@@ -70,3 +70,9 @@ var daniel = new Person(24, 'Daniel');
 ```
 
 ### Answer:
+
+`window`
+
+#### Follow up Question:
+
+#### Follow up Answer:
