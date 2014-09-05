@@ -36,7 +36,9 @@ Will  `new Date` run without throwing a runtime exception?
 Yes
 
 ### Question:
-What is the value of `this` when initializing `daniel`.
+
+What is the value of `this` when invoking `privateBirthday` while initializing `daniel`?
+
 ```javascript
 function Person(age, name)
 {
