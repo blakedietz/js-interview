@@ -86,3 +86,28 @@ var daniel = new Person(24, 'Daniel');
 #### Follow up Question:
 
 #### Follow up Answer:
+
+#Operators
+## Precedence
+
+### Question:
+Given the following snippet of code, what is the value of `url` once the code has finished running?
+```
+var flag = true;
+
+url = '/root/server/system';
+url += '/endpoint/' + flag ? 'true' : 'false';
+```
+### Answer:
+`/root/server/systemtrue`
+#### Follow up Question:
+How would you fix this code to work as you would initially expect it to? Why does this fix the problem? Alternatively you could answer why the problem was happening.
+#### Follow up Answer:
+```
+var flag = true;
+
+url = '/root/server/system';
+url += '/endpoint/' + (flag ? 'true' : 'false';)
+```
+
+
