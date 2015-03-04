@@ -154,7 +154,7 @@ Write out the expected console.log.
 
 Whitespace
 
-```
+```js
 (function(arg1)
  {
   console.log("func1");
@@ -172,7 +172,7 @@ Whitespace
 })();
 ```
 After func1 is invoked.
-```
+```js
 function(arg)
 {
  console.log('func3');
@@ -181,7 +181,7 @@ function(arg)
 ```
 
 After func3 is invoked 
-```
+```js
 // implicitly return so undefined is left
 undefined();
 ```
