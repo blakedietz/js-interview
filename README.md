@@ -99,10 +99,15 @@ url = '/root/server/system';
 url += '/endpoint/' + flag ? 'true' : 'false';
 ```
 ### Answer:
+
 `/root/server/systemtrue`
+
 #### Follow up Question:
+
 How would you fix this code to work as you would initially expect it to? Why does this fix the problem? Alternatively you could answer why the problem was happening.
+
 #### Follow up Answer:
+
 ```
 var flag = true;
 
@@ -110,4 +115,74 @@ url = '/root/server/system';
 url += '/endpoint/' + (flag ? 'true' : 'false';)
 ```
 
+# Mind Benders
+
+## Syntax 
+
+### Question :
+
+Write out the expected console.log.
+
+```
+(function(arg1)
+ {
+  console.log("func1");
+     
+     return function(arg)
+     {
+         console.log('func3');
+         console.log(arg);
+     }
+ })()
+
+(function nextFunc()
+{
+   console.log('func2'); 
+})();
+```
+
+### Answer :
+
+```
+2015-03-04 11:03:34.469 (index):24 func1
+2015-03-04 11:03:34.469 (index):28 func3
+2015-03-04 11:03:34.469 (index):29 function nextFunc(){ console.log('func2'); }
+2015-03-04 11:03:34.469 (index):34 Uncaught TypeError: (intermediate value)(intermediate value)(...)(...) is not a function
+```
+
+### Why :
+
+Whitespace
+
+```
+(function(arg1)
+ {
+  console.log("func1");
+     
+     return function(arg)
+     {
+         console.log('func3');
+         console.log(arg);
+     }
+ })()
+
+(function nextFunc()
+{
+   console.log('func2'); 
+})();
+```
+After func1 is invoked.
+```
+function(arg)
+{
+ console.log('func3');
+ console.log(arg);
+}(function nextFunc(){console.log('func2'); })();
+```
+
+After func3 is invoked 
+```
+// implicitly return so undefined is left
+undefined();
+```
 
