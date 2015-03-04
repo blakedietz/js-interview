@@ -123,7 +123,7 @@ url += '/endpoint/' + (flag ? 'true' : 'false';)
 
 Write out the expected console.log.
 
-```
+```js
 (function(arg1)
  {
   console.log("func1");
