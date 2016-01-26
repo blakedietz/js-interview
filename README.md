@@ -38,7 +38,7 @@ Will  `new Date` run without throwing a runtime exception?
 Yes
 
 #### Follow up Question:
-Is there a functional difference the following two statements?
+Is there a functional difference between the following two statements?
 ```javascript
 var date1 = new Date;
 var date2 = new Date();
